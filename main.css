@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0a0016;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: aliceblue;
+}
+
+.wrapper{
+    max-width: 650px;
+    margin: 60px auto;
+    background-color: #280042;
+    
+}
+
+.header{
+    width: 100%;
+    height: 75px;
+    background-image: url("img/redHeader.png");
+}
+
+.main{
+    padding: 20px;
+}
+
+.main p{
+    margin-bottom: 20px;
+}
+.imgnew{
+    position: absolute;
+    left: 0;top: 0;
+    /* right: 0;bottom: o;transform: rotate(180deg); */
+}
+.header{
+    position: relative; left: 15px; top: -25px;
+}
+.imgbutton{
+    position: absolute; left: 50%; top: -14px; transform: translateX(-50%); z-index: 15;
+}
+.imgtel{
+    position: fixed; left: 0; top: 30%;
+}
+.imgbird{
+    position: absolute; left: 40%; top: -25px; z-index: 14;
+}
+.nav{
+    background-color: #6e38b1cd;
+    overflow: hidden;
+    /* разрешает расширение */
+    border-radius:15px;
+    position: sticky;
+    top: 5px;
+    /* прилипание */
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-around и др; */
+    
+}
+.nav ul li{
+    list-style: none;
+}
+    .nav ul li a{
+    text-decoration: none;
+    /* убирает точки */
+    color: #ffb3ef;
+    display: inline-block;
+    /* убирает подчеркивание */
+    background-color: #ffffff;
+    margin: 15px; 
+    /* внеш отступ */
+    padding: 10px 20px; 
+    /* внутр отступ */
+    border-radius: 25px 0px 0px 0px;
+    transition: 0,5s;
+    /* время перехода */
+    }
+    .nav ul li a:hover{
+        /* после перехода значения */
+        background-color: #e495ff;
+        color:rgb(47, 6, 77);
+        border-radius: 25px;
+    }
